@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <form id='my-form'>
+        <label for="expense">Choose expensemost:</label>
+        <input type="number" name="expense" id="expense">
+        <label for="description">Choose description:</label>
+        <input type="text" name="description" id="description">
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category">
+            <option value="fuel">fuel</option>
+            <option value="food">food</option>
+            <option value="electricity">electricity</option>
+            <option value="movie">movie</option>
+          </select>
+        <input type="submit" name="submit" id="submit" value="Add Expense">
+     </form>
+     <div>
+        <ul id="showlist"></ul>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
